@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,figure,ul{
+    margin: 0;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+button{
+    padding: 0;
+    font-size: inherit;
+    border: 0;
+    background: none;
+}
+/* theme */
+header{
+    padding: 2rem;
+}
+header h1{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    line-height: 6rem;
+    font-weight: 400;
+    border-left: solid .5rem rgb(6, 89, 138);
+    
+}
+main{
+    max-width:80rem;
+    margin: 5rem auto;
+}
+main hr{
+    width: 100%;
+    border: 0;
+    height: .1rem;
+    background-color: #ccc;
+    margin: 4rem 0;
+}
+main figure{
+    display: grid;
+    grid-gap: 1rem;
+}
+main figure figcaption{
+    grid-row: 1;
+    grid-column: 2;
+    padding: 0.5rem;
+    font-style: italic;
+    line-height: 2.6rem;
+}
+main figure img{
+    clip-path: circle(50%);
+}
+main figure h2{
+    font-weight: 300;
+    font-style: italic;
+    padding: .5rem;
+}
+
+main figure time{
+    color: rgb(105, 103, 103);
+    display: inline-block;
+    padding: 0 0 .5rem;
+    font-size: 1.5rem;
+    font-style: normal;
+}
+main figure figcaption p{
+    text-align: justify;
+}
+main button{
+    display: block;
+    line-height: 4.5rem;
+    text-align: center;
+    border: solid .1rem #222;
+    margin: 0 auto;
+    width: 20.0rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: all 500ms ease-in-out;
+}
+main button:hover{
+    background-color: #ccc;
+}
+footer p{
+    text-align: center;
+}

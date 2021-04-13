@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap');
+html{
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+body{
+    font: 1.6rem 'Roboto', sans-serif;
+    margin: 0;
+}
+*{
+    box-sizing: border-box;
+}
+h1,h2,h3,h4,p,figure,ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #222;
+}
+button{
+    padding: 0;
+    font-size: inherit;
+    border: 0;
+    background: none;
+    cursor: pointer;
+}
+
+/* theme */
+header{
+    padding: 2rem;
+}
+header h1{
+    max-width: 80rem;
+    margin: 0 auto;
+    padding-left: 2rem;
+    line-height: 6rem;
+    font-weight: 400;
+    border-left: solid .5rem rgb(6, 89, 138);
+}
+main{
+    max-width: 80rem;
+    margin: 5rem auto;
+}
+main hr{
+    width: 100%;
+    border: 0;
+    height: .1rem;
+    background-color: #ccc;
+    margin: 4rem 0;
+}
+/* menu */
+main nav ul{
+    /*display: table;
+    border-spacing: 1rem;*/
+}
+main nav ul li{
+    /*display: table-cell;*/
+    display: inline-block;
+    background-color: rgba(0,0,0,.1);
+    line-height: 4.5rem;
+    padding:0 1.5rem;
+    margin-right: 1.5rem;
+}
+main nav ul li a{
+    display: block;
+    text-transform: capitalize;
+    font-weight: 400;
+    line-height: inherit;
+}
+main nav ul li img{
+    display: block;
+    width: 100%;
+}
+main figure{
+   /* display: table;
+    border-spacing: 1rem;*/
+    display: grid;
+    grid-gap: 1rem;
+}
+
+
+main figure figcaption{
+  /*display: table-cell;
+  vertical-align: top;*/
+  grid-row: 1;
+  grid-column: 2;
+  padding: 0.5rem;
+  font-style: italic;
+  line-height: 2.6rem;
+}
+main figure img{
+    clip-path: circle(50%);
+}
+main figure figcaption p{
+    text-align: justify;
+}
+main figure time{
+    color: rgb(105, 103, 103);
+    display: inline-block;
+    padding: 0 0 .5rem;
+    font-style: normal;
+    font-size: 1.5rem;
+}
+
+main figure h2{
+    font-weight: 300;
+    padding: .5rem;
+}
+main button{
+    display: block;
+    line-height: 4.5rem;
+    text-align: center;
+    border: solid .1rem #222;
+    margin: 0 auto;
+    width: 20rem;
+    font-weight: normal;
+    text-transform: uppercase;
+    transition: all 500ms ease-in-out;
+}
+main button:hover{
+    background-color: #ccc;
+}
+footer p{
+    text-align: center;
+    color:rgb(105, 103, 103);
+}
