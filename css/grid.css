@@ -27,7 +27,7 @@ button{
     cursor: pointer;
 }
 /* theme */
-header h1{
+header h1, footer{
     line-height: 6.0rem;
     font-weight: 300;
     max-width: 140.0rem;
@@ -43,6 +43,7 @@ main{
     margin: 5rem auto 0;
     grid-template: auto auto/ calc(40% / 2);
     grid-gap: 1rem;
+    padding-bottom: 6.5rem;
 }
 main nav{
     grid-row: 1;
@@ -80,6 +81,7 @@ main .gallery{
 .gallery ul li figure h2, .gallery ul li figure p{
     padding: .5rem;
     line-height: 2.4rem;
+
     
 }
 .gallery ul li figure p{
@@ -93,4 +95,78 @@ main .gallery{
     margin-top: 1rem;
     color: rgb(95, 93, 93);
     background-color: #fafafa;
+}
+footer *{
+    text-align: center;
+    font-size: small;
+    color: rgb(128, 127, 127);
+}
+
+
+/* media queris */
+@media screen and (max-width: 70rem){
+   
+    main nav{
+        display: block;
+        
+        
+    }
+    main nav ul{
+        font-size: 0;
+        padding: 1rem;
+    }
+    main nav li{
+        font-size: initial;
+        display: inline-block;
+        width: calc(100% / 4);
+        text-align: center;
+    }
+    .gallery ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1%;
+    }
+    main{
+        display: block;
+        margin: 0 1%;
+        
+    }
+    header h1{
+    line-height: 6.0rem;
+       font-size: 6vw;
+       text-align: center;
+    }
+    .gallery ul li figure p{
+        font-size: 1.4rem;
+        text-align: left;
+   
+    
+    }
+    
+    .gallery ul li figcaption h2{
+        font-size: 1em;
+    }
+    figure figcaption a{
+        width: 100%;
+        text-align: center;
+    }
+ 
+}
+@media screen and (orientation: landscape){
+    header h1{
+        
+           font-size: 3.5vw;
+           
+        }
+
+}
+/* desktop */
+@media screen and (min-width: 100rem){
+    header h1{
+        
+        font-size: 3rem;
+       
+        
+     }
+
 }
